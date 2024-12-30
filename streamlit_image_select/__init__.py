@@ -7,7 +7,13 @@ from pathlib import Path
 from typing import Optional
 import streamlit as st
 import streamlit.components.v1 as components
-from streamlit.type_util import LabelVisibility
+from streamlit.elements.lib.utils import (
+    Key,
+    LabelVisibility,
+    get_label_visibility_proto_value,
+    maybe_coerce_enum,
+    to_key,
+)
 
 _RELEASE = True
 
